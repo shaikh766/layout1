@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.main {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+align-content: center;
+padding: 20px;
+width: 95%;
+height: 100%;
+}
+
+.leftBox {
+flex: 1;
+min-width: 250px;
+background-image: url('https://thumbs.dreamstime.com/z/riverside-walkway-buildings-brisbane-cycleway-australia-s-third-largest-city-home-to-least-high-rise-least-90971428.jpg');
+background-size: cover;
+background-position: center;
+color: white;
+padding: 40px;
+text-align: center;
+border-radius: 30px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+height: 80%;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leftBox:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.rightBox {
+flex: 2;
+min-width: 300px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.fristBox {
+background-image: url('https://tse4.mm.bing.net/th?id=OIP.gvcLLGxlx5gT5i9VVMGwgwHaHa&pid=Api&P=0&h=220');
+background-size: cover;
+background-position: center;
+color: white;
+padding: 40px;
+text-align: center;
+border-radius: 30px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+height: 35%;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fristBox:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.secondBox {
+display: flex;
+gap: 20px;
+}
+
+.second-2 {
+flex: 1;
+background-image: url('https://cdn.thecrazytourist.com/wp-content/uploads/2022/10/ccimage-shutterstock_489615997.jpg');
+background-size: cover;
+background-position: center;
+color: white;
+padding: 40px;
+text-align: center;
+border-radius: 30px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+min-height: 23vh;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.second-1 {
+flex: 1;
+background-image: url('https://s3.amazonaws.com/swacdn/wp-content/uploads/2018/02/13160926/Riverside-Park-South-Balsley-David-Lloyd-18.jpg');
+background-size: cover;
+background-position: center;
+color: white;
+padding: 40px;
+text-align: center;
+border-radius: 30px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+min-height: 23vh;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.second-1:hover, .second-2:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.thirdBox {
+background-image: url('https://thumbs.dreamstime.com/b/riverside-city-25028157.jpg');
+background-size: cover;
+background-position: center;
+color: white;
+padding: 40px;
+text-align: center;
+border-radius: 30px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+height: 35%;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thirdBox:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+.main {
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftBox, .rightBox {
+    width: 100%;
+}
+
+.secondBox {
+    flex-direction: column;
+}
+
+.second-1, .second-2 {
+    width: 100%;
+}
+}
